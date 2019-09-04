@@ -1,4 +1,9 @@
-﻿Public Class Form1
+﻿'Assignment: Asg1-1
+'RCET0265
+'Dylan Slack
+'Hello World Program
+
+Public Class Form1
     Sub AssignString()
         Dim Weekday As String = "Monday"
     End Sub
