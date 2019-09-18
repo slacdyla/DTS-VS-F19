@@ -1,4 +1,10 @@
-﻿Public Class Form1
+﻿'Dylan Slack
+'RCET 0265
+'ASG 2-5   
+'Address Label Assignment
+'https://github.com/slacdyla/DTS-VS-F19.git
+
+Public Class Form1
     Dim First As String
 
     Dim Address1 As String
