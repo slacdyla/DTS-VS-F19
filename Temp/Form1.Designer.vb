@@ -25,13 +25,15 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(466, 414)
+        Me.Button2.Location = New System.Drawing.Point(271, 104)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 65)
+        Me.Button2.Size = New System.Drawing.Size(50, 80)
         Me.Button2.TabIndex = 0
         Me.Button2.Text = "Don't Click Me"
         Me.Button2.UseVisualStyleBackColor = True
@@ -41,14 +43,26 @@ Partial Class Form1
         Me.ToolTip1.BackColor = System.Drawing.Color.LightCyan
         Me.ToolTip1.Tag = ""
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Temp.My.Resources.Resources.Mario
+        Me.PictureBox1.Location = New System.Drawing.Point(22, 24)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(184, 219)
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1107, 608)
+        Me.ClientSize = New System.Drawing.Size(651, 255)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button2)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -62,4 +76,5 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9BF8EF75-045B-4597-ABEF-37B4C967BE7E}</ProjectGuid>
+    <ProjectGuid>{BAC67C20-032D-470E-A871-2184D393601A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Temp.My.MyApplication</StartupObject>
-    <RootNamespace>Temp</RootNamespace>
-    <AssemblyName>Temp</AssemblyName>
+    <StartupObject>ASG3_3.My.MyApplication</StartupObject>
+    <RootNamespace>ASG3_3</RootNamespace>
+    <AssemblyName>ASG3-3</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Temp.xml</DocumentationFile>
+    <DocumentationFile>ASG3-3.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Temp.xml</DocumentationFile>
+    <DocumentationFile>ASG3-3.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -118,9 +118,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Mario.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
