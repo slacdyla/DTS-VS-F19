@@ -3,10 +3,7 @@
 'Dylan Slack
 'Hello World Program
 
-Public Class Form1
-    Sub AssignString()
-        Dim Weekday As String = "Monday"
-    End Sub
+Public Class HelloWorld
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Label1.Text = "Hello, World"
@@ -16,7 +13,12 @@ Public Class Form1
         Label1.Text = "Bonjour tout le monde"
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Label1.Text = "elloHay orldWay"
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        End
     End Sub
 End Class
