@@ -32,7 +32,6 @@ Partial Class Form1
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -87,6 +86,7 @@ Partial Class Form1
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(32, 30)
+        Me.TextBox3.MaxLength = 6
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 22)
         Me.TextBox3.TabIndex = 5
@@ -132,19 +132,9 @@ Partial Class Form1
         Me.TextBox4.Size = New System.Drawing.Size(100, 22)
         Me.TextBox4.TabIndex = 9
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(113, 49)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(16, 17)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "$"
-        '
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.AliceBlue
-        Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.TextBox4)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Location = New System.Drawing.Point(329, 16)
@@ -171,7 +161,7 @@ Partial Class Form1
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(202, 104)
         Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Exit"
+        Me.Button3.Text = "&Exit"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
@@ -180,7 +170,7 @@ Partial Class Form1
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(175, 104)
         Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Clear"
+        Me.Button2.Text = "&Form Clear"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
@@ -189,7 +179,7 @@ Partial Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(222, 103)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Calculate"
+        Me.Button1.Text = "&Calculate"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
@@ -222,7 +212,6 @@ Partial Class Form1
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label6 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents Button3 As Button

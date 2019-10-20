@@ -5,21 +5,31 @@
 'https://github.com/slacdyla/DTS-VS-F19.git
 
 Public Class Form1
-    Dim lbs As Decimal
-    Dim oz As Decimal
-    Dim Cost As Decimal
+    Dim lbs As Double
+    Dim oz As Double
+    Dim Cost As Double
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text = "" Then
-            TextBox1.Text = "0"
+            MessageBox.Show("Invalid Input. Please Input a Number")
         End If
         If TextBox2.Text = "" Then
-            TextBox2.Text = "0"
+            MessageBox.Show("Invalid Input. Please Input a Number")
+            TextBox2.Select()
         End If
-        lbs = CDec(TextBox1.Text)
-        oz = CDec(TextBox2.Text)
+        If TextBox1.Text = "" Or TextBox2.Text = "" Then
+            Try
+            Catch a As Exception
+                Console.WriteLine(a.Message)
+                lbs = CDec(TextBox1.Text)
+                oz = CDec(TextBox2.Text)
+            End Try
+        Else
+            lbs = CDbl(TextBox1.Text)
+            oz = CDbl(TextBox2.Text)
+        End If
         Cost = ((lbs * 16) + oz) * 0.12
-        TextBox4.Text = (Cost)
-
+        TextBox4.Text = Cost.ToString("C")
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -30,6 +40,6 @@ Public Class Form1
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        End
+        Me.Close()
     End Sub
 End Class
