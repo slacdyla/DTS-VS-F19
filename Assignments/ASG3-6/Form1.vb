@@ -10,12 +10,13 @@ Public Class Form1
     Dim Cost As Double
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If TextBox1.Text = "" Then
-            MessageBox.Show("Invalid Input. Please Input a Number")
-        End If
+
         If TextBox2.Text = "" Then
             MessageBox.Show("Invalid Input. Please Input a Number")
             TextBox2.Select()
+        End If
+        If TextBox1.Text = "" Then
+            MessageBox.Show("Invalid Input. Please Input a Number")
         End If
         If TextBox1.Text = "" Or TextBox2.Text = "" Then
             Try
@@ -42,4 +43,6 @@ Public Class Form1
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Me.Close()
     End Sub
+
+
 End Class

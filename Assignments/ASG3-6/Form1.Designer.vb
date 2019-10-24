@@ -47,14 +47,14 @@ Partial Class Form1
         Me.TextBox1.Location = New System.Drawing.Point(35, 78)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(59, 22)
-        Me.TextBox1.TabIndex = 0
+        Me.TextBox1.TabIndex = 2
         '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(137, 78)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(59, 22)
-        Me.TextBox2.TabIndex = 1
+        Me.TextBox2.TabIndex = 3
         '
         'Label1
         '
@@ -89,7 +89,7 @@ Partial Class Form1
         Me.TextBox3.MaxLength = 6
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox3.TabIndex = 5
+        Me.TextBox3.TabIndex = 1
         '
         'Label4
         '
@@ -160,7 +160,7 @@ Partial Class Form1
         Me.Button3.Location = New System.Drawing.Point(441, 21)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(202, 104)
-        Me.Button3.TabIndex = 2
+        Me.Button3.TabIndex = 6
         Me.Button3.Text = "&Exit"
         Me.Button3.UseVisualStyleBackColor = True
         '
@@ -169,7 +169,7 @@ Partial Class Form1
         Me.Button2.Location = New System.Drawing.Point(260, 21)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(175, 104)
-        Me.Button2.TabIndex = 1
+        Me.Button2.TabIndex = 5
         Me.Button2.Text = "&Form Clear"
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -178,7 +178,7 @@ Partial Class Form1
         Me.Button1.Location = New System.Drawing.Point(32, 21)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(222, 103)
-        Me.Button1.TabIndex = 0
+        Me.Button1.TabIndex = 4
         Me.Button1.Text = "&Calculate"
         Me.Button1.UseVisualStyleBackColor = True
         '
