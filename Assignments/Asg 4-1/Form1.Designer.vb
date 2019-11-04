@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
@@ -46,7 +47,16 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip4 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip5 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip6 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip7 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip8 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip9 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip10 = New System.Windows.Forms.ToolTip(Me.components)
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -59,7 +69,7 @@ Partial Class Form1
         Me.RadioButton1.Location = New System.Drawing.Point(19, 21)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(37, 21)
-        Me.RadioButton1.TabIndex = 0
+        Me.RadioButton1.TabIndex = 7
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "+"
         Me.RadioButton1.UseVisualStyleBackColor = True
@@ -70,7 +80,7 @@ Partial Class Form1
         Me.RadioButton2.Location = New System.Drawing.Point(19, 48)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(34, 21)
-        Me.RadioButton2.TabIndex = 1
+        Me.RadioButton2.TabIndex = 8
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "-"
         Me.RadioButton2.UseVisualStyleBackColor = True
@@ -81,7 +91,7 @@ Partial Class Form1
         Me.RadioButton3.Location = New System.Drawing.Point(19, 75)
         Me.RadioButton3.Name = "RadioButton3"
         Me.RadioButton3.Size = New System.Drawing.Size(34, 21)
-        Me.RadioButton3.TabIndex = 2
+        Me.RadioButton3.TabIndex = 9
         Me.RadioButton3.TabStop = True
         Me.RadioButton3.Text = "*"
         Me.RadioButton3.UseVisualStyleBackColor = True
@@ -93,7 +103,7 @@ Partial Class Form1
         Me.RadioButton4.Name = "RadioButton4"
         Me.RadioButton4.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.RadioButton4.Size = New System.Drawing.Size(33, 21)
-        Me.RadioButton4.TabIndex = 3
+        Me.RadioButton4.TabIndex = 10
         Me.RadioButton4.TabStop = True
         Me.RadioButton4.Text = "/"
         Me.RadioButton4.UseVisualStyleBackColor = True
@@ -116,21 +126,21 @@ Partial Class Form1
         Me.TextBox1.Location = New System.Drawing.Point(26, 33)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox1.TabIndex = 5
+        Me.TextBox1.TabIndex = 1
         '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(132, 33)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(29, 22)
-        Me.TextBox2.TabIndex = 6
+        Me.TextBox2.TabIndex = 2
         '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(171, 33)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(29, 22)
-        Me.TextBox3.TabIndex = 7
+        Me.TextBox3.TabIndex = 3
         '
         'Label1
         '
@@ -138,7 +148,7 @@ Partial Class Form1
         Me.Label1.Location = New System.Drawing.Point(23, 13)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(45, 17)
-        Me.Label1.TabIndex = 8
+        Me.Label1.TabIndex = 0
         Me.Label1.Text = "Name"
         '
         'Label2
@@ -147,7 +157,7 @@ Partial Class Form1
         Me.Label2.Location = New System.Drawing.Point(128, 13)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(33, 17)
-        Me.Label2.TabIndex = 9
+        Me.Label2.TabIndex = 0
         Me.Label2.Text = "Age"
         '
         'Label3
@@ -156,29 +166,30 @@ Partial Class Form1
         Me.Label3.Location = New System.Drawing.Point(164, 13)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(48, 17)
-        Me.Label3.TabIndex = 10
+        Me.Label3.TabIndex = 0
         Me.Label3.Text = "Grade"
         '
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(26, 41)
+        Me.TextBox4.MaxLength = 3
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox4.TabIndex = 11
+        Me.TextBox4.TabIndex = 4
         '
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(26, 98)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox5.TabIndex = 12
+        Me.TextBox5.TabIndex = 5
         '
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(26, 150)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox6.TabIndex = 13
+        Me.TextBox6.TabIndex = 6
         '
         'Label4
         '
@@ -186,7 +197,7 @@ Partial Class Form1
         Me.Label4.Location = New System.Drawing.Point(23, 21)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(81, 17)
-        Me.Label4.TabIndex = 14
+        Me.Label4.TabIndex = 0
         Me.Label4.Text = "1st Number"
         '
         'Label5
@@ -195,7 +206,7 @@ Partial Class Form1
         Me.Label5.Location = New System.Drawing.Point(23, 78)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(86, 17)
-        Me.Label5.TabIndex = 15
+        Me.Label5.TabIndex = 0
         Me.Label5.Text = "2nd Number"
         '
         'Label6
@@ -204,7 +215,7 @@ Partial Class Form1
         Me.Label6.Location = New System.Drawing.Point(23, 130)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(107, 17)
-        Me.Label6.TabIndex = 16
+        Me.Label6.TabIndex = 0
         Me.Label6.Text = "Student Answer"
         '
         'GroupBox2
@@ -253,10 +264,11 @@ Partial Class Form1
         '
         'Button4
         '
+        Me.Button4.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button4.Location = New System.Drawing.Point(14, 168)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(84, 41)
-        Me.Button4.TabIndex = 3
+        Me.Button4.TabIndex = 14
         Me.Button4.Text = "Exit"
         Me.Button4.UseVisualStyleBackColor = True
         '
@@ -265,7 +277,7 @@ Partial Class Form1
         Me.Button3.Location = New System.Drawing.Point(14, 121)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(84, 41)
-        Me.Button3.TabIndex = 2
+        Me.Button3.TabIndex = 13
         Me.Button3.Text = "Summary"
         Me.Button3.UseVisualStyleBackColor = True
         '
@@ -274,7 +286,7 @@ Partial Class Form1
         Me.Button2.Location = New System.Drawing.Point(13, 74)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(85, 41)
-        Me.Button2.TabIndex = 1
+        Me.Button2.TabIndex = 12
         Me.Button2.Text = "Clear"
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -283,30 +295,35 @@ Partial Class Form1
         Me.Button1.Location = New System.Drawing.Point(13, 27)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(85, 41)
-        Me.Button1.TabIndex = 0
+        Me.Button1.TabIndex = 11
         Me.Button1.Text = "Submit"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(263, 27)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox7.TabIndex = 20
-        '
         'Form1
         '
+        Me.AcceptButton = Me.Button1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.CancelButton = Me.Button4
         Me.ClientSize = New System.Drawing.Size(594, 450)
-        Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
+        Me.Text = "Math Contest"
+        Me.ToolTip9.SetToolTip(Me, "Click To Get A Summary Of Your Score")
+        Me.ToolTip10.SetToolTip(Me, "Click Here to Close")
+        Me.ToolTip7.SetToolTip(Me, "Click To Submit Answer")
+        Me.ToolTip8.SetToolTip(Me, "Click To Clear the Form")
+        Me.ToolTip5.SetToolTip(Me, "Second Number In Problem")
+        Me.ToolTip6.SetToolTip(Me, "Your Answer")
+        Me.ToolTip3.SetToolTip(Me, "Your Grade")
+        Me.ToolTip2.SetToolTip(Me, "Your Age")
+        Me.ToolTip1.SetToolTip(Me, "Your Name")
+        Me.ToolTip4.SetToolTip(Me, "First Number In Problem")
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -315,7 +332,6 @@ Partial Class Form1
         Me.GroupBox3.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -343,5 +359,14 @@ Partial Class Form1
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip3 As ToolTip
+    Friend WithEvents ToolTip4 As ToolTip
+    Friend WithEvents ToolTip5 As ToolTip
+    Friend WithEvents ToolTip6 As ToolTip
+    Friend WithEvents ToolTip7 As ToolTip
+    Friend WithEvents ToolTip8 As ToolTip
+    Friend WithEvents ToolTip9 As ToolTip
+    Friend WithEvents ToolTip10 As ToolTip
 End Class

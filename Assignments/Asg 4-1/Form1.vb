@@ -17,6 +17,7 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        y = y + 1
         If TextBox4.Text = "" Then
             TextBox4.Text = "0"
         End If
@@ -44,9 +45,6 @@
         If result = CDec(TextBox6.Text) Then
             x = x + 1
         End If
-        TextBox7.Text = CStr(x)
-        y = y + 1
-
     End Sub
 
 
@@ -64,5 +62,53 @@
         TextBox4.Text = ""
         TextBox5.Text = ""
         TextBox6.Text = ""
+    End Sub
+    Dim charactersAllowed As String = "1234567890"
+    Private Sub Textbox4NumOnly(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
+        Dim theText As String = TextBox4.Text
+        Dim Letter As String
+        Dim SelectionIndex As Integer = TextBox4.SelectionStart
+        Dim Change As Integer
+        For x As Integer = 0 To TextBox4.Text.Length - 1
+            Letter = TextBox4.Text.Substring(x, 1)
+            If charactersAllowed.Contains(Letter) = False Then
+                theText = theText.Replace(Letter, String.Empty)
+                Change = 1
+            End If
+        Next
+        TextBox4.Text = theText
+        TextBox4.Select(SelectionIndex - Change, 0)
+    End Sub
+    Private Sub Textbox5NumOnly(sender As Object, e As EventArgs) Handles TextBox5.TextChanged
+
+        Dim theText As String = TextBox5.Text
+        Dim Letter As String
+        Dim SelectionIndex As Integer = TextBox5.SelectionStart
+        Dim Change As Integer
+        For x As Integer = 0 To TextBox5.Text.Length - 1
+            Letter = TextBox5.Text.Substring(x, 1)
+            If charactersAllowed.Contains(Letter) = False Then
+                theText = theText.Replace(Letter, String.Empty)
+                Change = 1
+            End If
+        Next
+        TextBox5.Text = theText
+        TextBox5.Select(SelectionIndex - Change, 0)
+    End Sub
+
+    Private Sub TextBox6NumOnly(sender As Object, e As EventArgs) Handles TextBox6.TextChanged
+        Dim theText As String = TextBox6.Text
+        Dim Letter As String
+        Dim SelectionIndex As Integer = TextBox6.SelectionStart
+        Dim Change As Integer
+        For x As Integer = 0 To TextBox6.Text.Length - 1
+            Letter = TextBox6.Text.Substring(x, 1)
+            If charactersAllowed.Contains(Letter) = False Then
+                theText = theText.Replace(Letter, String.Empty)
+                Change = 1
+            End If
+        Next
+        TextBox6.Text = theText
+        TextBox6.Select(SelectionIndex - Change, 0)
     End Sub
 End Class
