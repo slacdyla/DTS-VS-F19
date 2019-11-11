@@ -5,7 +5,7 @@
 'https://github.com/slacdyla/DTS-VS-F19
 Public Class Form1
     Dim monday, tuesday, wednesday, x, y, z As Decimal
-    Dim nameTip, mondayTip, tuesdayTip, wednesdayTip, CalculateTip, ClearTip, SummaryTip, ExitTip As Object
+    Dim charactersAllowed As String = "1234567890"
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox4.Text = "" Or TextBox2.Text = "" Or TextBox3.Text = "" Then
 
@@ -89,7 +89,7 @@ Public Class Form1
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Close()
     End Sub
-    Dim charactersAllowed As String = "1234567890"
+
     Private Sub Textbox2NumOnly(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
 
         Dim theText As String = TextBox2.Text
