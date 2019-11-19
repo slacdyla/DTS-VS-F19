@@ -126,6 +126,7 @@ Public Class Form1
         costOfGoods.Text = theText
         costOfGoods.Select(SelectionIndex - Change, 0)
     End Sub
+    'Setting ToolTips
     Private Sub Beg_MouseHover(sender As Object, e As EventArgs) Handles Beg.MouseHover
         Me.BeginningTip.ShowAlways = True
         Me.BeginningTip.SetToolTip(Beg, "Enter Beginning Inventory")

@@ -194,7 +194,7 @@ Partial Class Form1
         '
         Me.Button1.Location = New System.Drawing.Point(9, 38)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 107)
+        Me.Button1.Size = New System.Drawing.Size(82, 107)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "&Calculate"
         Me.Button1.UseVisualStyleBackColor = True
@@ -211,7 +211,6 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.CancelButton = Me.CancelButton
         Me.ClientSize = New System.Drawing.Size(498, 450)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
