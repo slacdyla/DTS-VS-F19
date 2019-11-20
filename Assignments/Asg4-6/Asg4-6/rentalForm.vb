@@ -12,6 +12,9 @@ Public Class rentalForm
     Dim customer As String
     Dim address As String
     Dim total, discount1, discount2, charge, dayCharge, days, milecharge, totalMiles, endOdo, begOdo As Decimal
+
+
+
     Private Sub calculateButton_Click(sender As Object, e As EventArgs) Handles calculateButton.Click
         x = x + 1
         summaryButton.Show()

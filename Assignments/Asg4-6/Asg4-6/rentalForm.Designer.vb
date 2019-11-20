@@ -22,6 +22,7 @@ Partial Class rentalForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -60,6 +61,7 @@ Partial Class rentalForm
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.summaryButton = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.OdometerGroupBox.SuspendLayout()
         Me.DiscountGroupBox.SuspendLayout()
         Me.SuspendLayout()
@@ -151,6 +153,7 @@ Partial Class rentalForm
         Me.nameTextBox.Name = "nameTextBox"
         Me.nameTextBox.Size = New System.Drawing.Size(132, 22)
         Me.nameTextBox.TabIndex = 1
+        Me.ToolTip1.SetToolTip(Me.nameTextBox, "Enter your Name")
         '
         'addressTextBox
         '
@@ -159,6 +162,7 @@ Partial Class rentalForm
         Me.addressTextBox.Name = "addressTextBox"
         Me.addressTextBox.Size = New System.Drawing.Size(132, 22)
         Me.addressTextBox.TabIndex = 3
+        Me.ToolTip1.SetToolTip(Me.addressTextBox, "Enter Your Address")
         '
         'cityTextBox
         '
@@ -167,6 +171,7 @@ Partial Class rentalForm
         Me.cityTextBox.Name = "cityTextBox"
         Me.cityTextBox.Size = New System.Drawing.Size(132, 22)
         Me.cityTextBox.TabIndex = 5
+        Me.ToolTip1.SetToolTip(Me.cityTextBox, "Enter Your City")
         '
         'stateTextBox
         '
@@ -175,6 +180,7 @@ Partial Class rentalForm
         Me.stateTextBox.Name = "stateTextBox"
         Me.stateTextBox.Size = New System.Drawing.Size(132, 22)
         Me.stateTextBox.TabIndex = 7
+        Me.ToolTip1.SetToolTip(Me.stateTextBox, "Enter your State")
         '
         'zipCodeTextBox
         '
@@ -183,6 +189,7 @@ Partial Class rentalForm
         Me.zipCodeTextBox.Name = "zipCodeTextBox"
         Me.zipCodeTextBox.Size = New System.Drawing.Size(132, 22)
         Me.zipCodeTextBox.TabIndex = 9
+        Me.ToolTip1.SetToolTip(Me.zipCodeTextBox, "Enter your zip code")
         '
         'beginOdometerTextBox
         '
@@ -191,6 +198,7 @@ Partial Class rentalForm
         Me.beginOdometerTextBox.Name = "beginOdometerTextBox"
         Me.beginOdometerTextBox.Size = New System.Drawing.Size(132, 22)
         Me.beginOdometerTextBox.TabIndex = 11
+        Me.ToolTip1.SetToolTip(Me.beginOdometerTextBox, "Enter Odometer reading at the beginning of your drive")
         '
         'endOdometerTextBox
         '
@@ -199,6 +207,7 @@ Partial Class rentalForm
         Me.endOdometerTextBox.Name = "endOdometerTextBox"
         Me.endOdometerTextBox.Size = New System.Drawing.Size(132, 22)
         Me.endOdometerTextBox.TabIndex = 13
+        Me.ToolTip1.SetToolTip(Me.endOdometerTextBox, "Enter your odometer reading at the end of your trip")
         '
         'daysTextBox
         '
@@ -207,6 +216,7 @@ Partial Class rentalForm
         Me.daysTextBox.Name = "daysTextBox"
         Me.daysTextBox.Size = New System.Drawing.Size(132, 22)
         Me.daysTextBox.TabIndex = 15
+        Me.ToolTip1.SetToolTip(Me.daysTextBox, "Enter the number of days of the rental")
         '
         'OdometerGroupBox
         '
@@ -290,6 +300,7 @@ Partial Class rentalForm
         Me.calculateButton.Size = New System.Drawing.Size(100, 28)
         Me.calculateButton.TabIndex = 18
         Me.calculateButton.Text = "&Calculate"
+        Me.ToolTip1.SetToolTip(Me.calculateButton, "Click Me to Calculate The Form")
         Me.calculateButton.UseVisualStyleBackColor = True
         '
         'clearButton
@@ -300,6 +311,7 @@ Partial Class rentalForm
         Me.clearButton.Size = New System.Drawing.Size(100, 28)
         Me.clearButton.TabIndex = 19
         Me.clearButton.Text = "C&lear"
+        Me.ToolTip1.SetToolTip(Me.clearButton, "Click Me To Clear The Form")
         Me.clearButton.UseVisualStyleBackColor = True
         '
         'exitButton
@@ -312,6 +324,7 @@ Partial Class rentalForm
         Me.exitButton.TabIndex = 20
         Me.exitButton.TabStop = False
         Me.exitButton.Text = "E&xit"
+        Me.ToolTip1.SetToolTip(Me.exitButton, "Click Me to Exit The Form")
         Me.exitButton.UseVisualStyleBackColor = True
         '
         'Label9
@@ -452,6 +465,7 @@ Partial Class rentalForm
         Me.summaryButton.Size = New System.Drawing.Size(100, 28)
         Me.summaryButton.TabIndex = 33
         Me.summaryButton.Text = "Summar&y"
+        Me.ToolTip1.SetToolTip(Me.summaryButton, "Click Me To View Summary")
         Me.summaryButton.UseVisualStyleBackColor = True
         Me.summaryButton.Visible = False
         '
@@ -546,4 +560,5 @@ Partial Class rentalForm
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents summaryButton As System.Windows.Forms.Button
+    Friend WithEvents ToolTip1 As ToolTip
 End Class
