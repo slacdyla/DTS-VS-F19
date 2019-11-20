@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -37,6 +38,7 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -48,6 +50,7 @@ Partial Class Form1
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(59, 22)
         Me.TextBox1.TabIndex = 2
+        Me.ToolTip1.SetToolTip(Me.TextBox1, "Enter Weight in Lbs")
         '
         'TextBox2
         '
@@ -55,6 +58,7 @@ Partial Class Form1
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(59, 22)
         Me.TextBox2.TabIndex = 3
+        Me.ToolTip1.SetToolTip(Me.TextBox2, "Enter Weight in Oz")
         '
         'Label1
         '
@@ -90,6 +94,7 @@ Partial Class Form1
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 22)
         Me.TextBox3.TabIndex = 1
+        Me.ToolTip1.SetToolTip(Me.TextBox3, "Enter 6 Digit ID Code")
         '
         'Label4
         '
@@ -131,6 +136,7 @@ Partial Class Form1
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 22)
         Me.TextBox4.TabIndex = 9
+        Me.TextBox4.TabStop = False
         '
         'GroupBox2
         '
@@ -162,6 +168,7 @@ Partial Class Form1
         Me.Button3.Size = New System.Drawing.Size(202, 104)
         Me.Button3.TabIndex = 6
         Me.Button3.Text = "&Exit"
+        Me.ToolTip1.SetToolTip(Me.Button3, "Click Me to Close The Form")
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
@@ -171,6 +178,7 @@ Partial Class Form1
         Me.Button2.Size = New System.Drawing.Size(175, 104)
         Me.Button2.TabIndex = 5
         Me.Button2.Text = "&Form Clear"
+        Me.ToolTip1.SetToolTip(Me.Button2, "Click Me To Clear The Form")
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
@@ -180,19 +188,22 @@ Partial Class Form1
         Me.Button1.Size = New System.Drawing.Size(222, 103)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "&Calculate"
+        Me.ToolTip1.SetToolTip(Me.Button1, "Click Me to Calculate the Cost of Shipping")
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
         '
+        Me.AcceptButton = Me.Button1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DimGray
+        Me.CancelButton = Me.Button3
         Me.ClientSize = New System.Drawing.Size(706, 354)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Shipping Weight Caluclator"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -217,4 +228,5 @@ Partial Class Form1
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents ToolTip1 As ToolTip
 End Class
