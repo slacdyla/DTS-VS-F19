@@ -163,6 +163,7 @@ Partial Class Form1
         '
         'Button3
         '
+        Me.Button3.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button3.Location = New System.Drawing.Point(441, 21)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(202, 104)
